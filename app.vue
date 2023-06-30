@@ -1,5 +1,6 @@
 <script setup>
-const data = await useFetch('/api/partner')
+const event = useRequestEvent()
+const data = await useFetchWithCookie(event, '/api/partner')
 </script>
 <template>
   <div>
